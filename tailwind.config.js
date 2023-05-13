@@ -25,12 +25,12 @@ export default {
       colors: {
         primary: '#0a0a0a',
         accent: {
-          DEFAULT: '#a37d4c',
-          hover: '#967142',
+          DEFAULT: '#ffc000',
+          hover: '#d4a000',
         },
       },
       backgroundImage: {
-        room: "url('./assets/img/room.jpg')",
+        room: "url('./img/room.jpg')",
       },
     },
   },
