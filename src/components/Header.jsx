@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import LogoWhite from '/img/logo-white.svg'
 import LogoDark from '/img/logo-dark.svg'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
     const [nav, setNav] = useState(false)
@@ -23,11 +24,11 @@ const Header = () => {
                 </a>
                 {/* nav */}
                 <nav className={`${nav ? 'text-primary' : 'text-white'} flex gap-x-4 lg:gap-x-8 items-center font-tertiary tracking-[3px] text-base uppercase`}>
-                    <a href="" className='hover:text-accent transition'>Home</a>
-                    <a href="" className='hover:text-accent transition'>Rooms</a>
-                    <a href="" className='hover:text-accent transition'>Restaurant</a>
-                    <a href="" className='hover:text-accent transition'>Spa</a>
-                    <a href="" className='hover:text-accent transition'>Contact</a>
+                    <Link to="/" className='hover:text-accent transition'>Home</Link>
+                    <Link to="/about" className='hover:text-accent transition'>About</Link>
+                    <Link to="/rooms" className='hover:text-accent transition'>Rooms</Link>
+                    <Link to="/" className='hover:text-accent transition'>Spa</Link>
+                    <Link to="/contact" className='hover:text-accent transition'>Contact</Link>
                 </nav>
             </div>
         </header>
