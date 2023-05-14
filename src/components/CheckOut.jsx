@@ -8,7 +8,7 @@ const CheckOut = () => {
     const [endDate, setEndDate] = useState(false)
 
     return (
-        <div className='relative flex items-center justify-end'>
+        <div className='relative flex items-center justify-end h-full'>
             {/* icon */}
             <div className='absolute z-10 pr-8'>
                 <div>
