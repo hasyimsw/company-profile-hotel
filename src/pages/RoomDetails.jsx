@@ -26,10 +26,10 @@ const RoomDetails = () => {
             <section>
                 <ScrollToTop />
                 {/* Banner */}
-                <div className='bg-room bg-cover bg-center h-[560px] relative flex items-center justify-center'>
+                <div className='bg-room-details bg-cover bg-center h-[560px] relative flex items-center justify-center'>
                     {/* overlay */}
                     <div className='absolute w-full h-full bg-black/70'>
-
+                        {/* <img src={imageLg} alt="" /> */}
                     </div>
                     {/* title */}
                     <h1 className='text-6xl text-white z-20 font-primary text-center'>{name} Details</h1>
