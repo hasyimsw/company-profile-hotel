@@ -1,15 +1,16 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import LogoWhite from '/img/logo-white.svg'
 
 const Footer = () => {
     return (
         <footer className='bg-primary py-12'>
-            <div className='container mx-auto text-white flex justify-between'>
+            <div className='container mx-auto text-white md:flex md:justify-between'>
                 {/* logo */}
-                <a href="/">
+                <Link to="/" className='mb-4'>
                     <img src={LogoWhite} alt="Logo" />
-                </a>
-                Copyright &copy; 2023. All rights reserved.
+                </Link>
+                <span>Copyright &copy; 2023. All rights reserved.</span>
             </div>
         </footer>
     )

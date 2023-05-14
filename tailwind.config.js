@@ -25,12 +25,9 @@ export default {
       colors: {
         primary: '#0a0a0a',
         accent: {
-          DEFAULT: '#ffc000',
-          hover: '#d4a000',
+          DEFAULT: '#a37d4c',
+          hover: '#967142',
         },
-      },
-      backgroundImage: {
-        room: "url('./img/room.jpg')",
       },
     },
   },

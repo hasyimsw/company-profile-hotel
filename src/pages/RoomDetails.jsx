@@ -28,9 +28,7 @@ const RoomDetails = () => {
                 {/* Banner */}
                 <div className='bg-room-details bg-cover bg-center h-[560px] relative flex items-center justify-center'>
                     {/* overlay */}
-                    <div className='absolute w-full h-full bg-black/70'>
-                        {/* <img src={imageLg} alt="" /> */}
-                    </div>
+                    <div className='absolute w-full h-full bg-black/70'></div>
                     {/* title */}
                     <h1 className='text-6xl text-white z-20 font-primary text-center'>{name} Details</h1>
                 </div>
@@ -46,7 +44,7 @@ const RoomDetails = () => {
                                 <h3 className='h3 mb-3'>Room Facilities</h3>
                                 <p className='mb-12'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, vero. Ut illum earum fugit veniam, quam labore aut, odio nobis aspernatur repellat exercitationem explicabo velit vel saepe dignissimos rem consequatur?</p>
                                 {/* Grid */}
-                                <div className='grid grid-cols-3 gap-6 mb-12'>
+                                <div className='grid grid-cols-3 gap-4 mb-12'>
                                     {facilities.map((item, index) => {
                                         const { name, icon } = item
                                         return <div key={index} className='flex items-center gap-x-3 flex-1'>

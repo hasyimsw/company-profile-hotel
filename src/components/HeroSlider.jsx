@@ -36,7 +36,7 @@ const HeroSlider = () => {
                             <div className='uppercase font-tertiary tracking-[6px] mb-5'>
                                 Just Enjoy and Relax
                             </div>
-                            <h1 className='text-[32px] font-primary uppercase tracking-[2px] max-w-[920px] lg:text-[68px]'>
+                            <h1 className='text-[32px] font-primary uppercase tracking-[2px] max-w-[920px] lg:text-[68px] mb-4'>
                                 {title}
                             </h1>
                             <button className='btn btn-lg btn-primary mx-auto'>{btnText}</button>
