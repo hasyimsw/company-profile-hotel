@@ -26,7 +26,7 @@ const Header = () => {
                 <nav className={`${nav ? 'text-primary' : 'text-white'} flex gap-x-4 lg:gap-x-8 items-center font-tertiary tracking-[3px] text-base uppercase`}>
                     <Link to="/" className='hover:text-accent transition'>Home</Link>
                     <Link to="/about" className='hover:text-accent transition'>About</Link>
-                    <Link to="/rooms" className='hover:text-accent transition'>Rooms</Link>
+                    <Link to="/room" className='hover:text-accent transition'>Rooms</Link>
                     <Link to="/" className='hover:text-accent transition'>Spa</Link>
                     <Link to="/contact" className='hover:text-accent transition'>Contact</Link>
                 </nav>
