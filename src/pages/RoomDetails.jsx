@@ -7,8 +7,6 @@ import KidsDropdown from '../components/KidsDropdown'
 import ScrollToTop from '../components/ScrollToTop'
 import { RoomContext } from '../context/RoomContext'
 import { FaCheck } from 'react-icons/fa'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
 
 const RoomDetails = () => {
     const { rooms } = useContext(RoomContext)
@@ -22,7 +20,6 @@ const RoomDetails = () => {
 
     return (
         <>
-            <Header />
             <section>
                 <ScrollToTop />
                 {/* Banner */}
@@ -103,7 +100,6 @@ const RoomDetails = () => {
                     </div>
                 </div>
             </section>
-            <Footer />
         </>
     )
 }
