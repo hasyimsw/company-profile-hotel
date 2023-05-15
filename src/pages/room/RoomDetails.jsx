@@ -1,11 +1,11 @@
 import React, { useContext } from 'react'
 import { useParams } from 'react-router-dom'
-import AdultsDropdown from '../components/AdultsDropdown'
-import CheckIn from '../components/CheckIn'
-import CheckOut from '../components/CheckOut'
-import KidsDropdown from '../components/KidsDropdown'
-import ScrollToTop from '../components/ScrollToTop'
-import { RoomContext } from '../context/RoomContext'
+import AdultsDropdown from '../../components/AdultsDropdown'
+import CheckIn from '../../components/CheckIn'
+import CheckOut from '../../components/CheckOut'
+import KidsDropdown from '../../components/KidsDropdown'
+import ScrollToTop from '../../components/ScrollToTop'
+import { RoomContext } from '../../context/RoomContext'
 import { FaCheck } from 'react-icons/fa'
 
 const RoomDetails = () => {
