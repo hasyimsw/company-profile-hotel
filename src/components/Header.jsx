@@ -9,7 +9,7 @@ const Header = () => {
         window.addEventListener('scroll', () => {
             window.scrollY > 50 ? setNav(true) : setNav(false)
         })
-    }, [])
+    })
 
     return (
         <header className={`${nav ? 'bg-white py-6 shadow-lg' : 'bg-transparent py-8'} fixed z-50 w-full transition-all duration-500`}>
