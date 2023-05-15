@@ -7,6 +7,7 @@ import KidsDropdown from '../../components/KidsDropdown'
 import ScrollToTop from '../../components/ScrollToTop'
 import { RoomContext } from '../../context/RoomContext'
 import { FaCheck } from 'react-icons/fa'
+import NotFound from '../NotFound'
 
 const RoomDetails = () => {
     const { rooms } = useContext(RoomContext)
@@ -15,6 +16,8 @@ const RoomDetails = () => {
     const room = rooms.find((room) => {
         return room.id === Number(id)
     })
+
+    if (!room) return <NotFound />
 
     const { name, description, facilities, imageLg, price } = room
 
