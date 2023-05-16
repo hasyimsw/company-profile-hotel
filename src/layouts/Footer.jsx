@@ -4,7 +4,7 @@ import LogoWhite from '/img/logo-white.svg'
 
 const Footer = () => {
     return (
-        <footer className='bg-primary py-10'>
+        <footer className='py-10 bg-primary'>
             <div className='container mx-auto'>
                 <div className='text-white md:flex md:justify-between md:items-center'>
                     {/* logo */}

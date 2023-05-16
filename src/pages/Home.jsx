@@ -7,8 +7,8 @@ const Home = () => {
     return (
         <div>
             <HeroSlider />
-            <div className="container mx-auto relative">
-                <div className='bg-accent/20 mt-4 p-4 lg:shadow-xl lg:absolute lg:left-0 lg:right-0 lg:p-0 lg:z-30 lg:-top-12'>
+            <div className="container relative mx-auto">
+                <div className='p-4 mt-4 bg-accent/20 lg:shadow-xl lg:absolute lg:left-0 lg:right-0 lg:p-0 lg:z-30 lg:-top-12'>
                     <BookForm />
                 </div>
             </div>

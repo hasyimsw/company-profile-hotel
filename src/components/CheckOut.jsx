@@ -12,7 +12,7 @@ const CheckOut = () => {
             {/* icon */}
             <div className='absolute z-10 pr-8'>
                 <div>
-                    <BsCalendar className='text-accent text-base' />
+                    <BsCalendar className='text-base text-accent' />
                 </div>
             </div>
             <DatePicker className='w-full h-full' selected={endDate} placeholderText="Check Out" onChange={(date) => setEndDate(date)} />

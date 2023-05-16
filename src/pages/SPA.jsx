@@ -1,9 +1,9 @@
 import React from 'react'
 
-const About = () => {
+const SPA = () => {
   return (
     <>
-      <section className='container h-screen mx-auto bg-blue-200'>
+      <section className='container h-screen mx-auto bg-black/40'>
         <div className='flex items-center justify-center pb-10 pt-52'>
           <span className='font-bold text-7xl'>Durung Enek Halaman About</span>
         </div>
@@ -15,4 +15,4 @@ const About = () => {
   )
 }
 
-export default About
+export default SPA

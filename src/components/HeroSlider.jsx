@@ -31,15 +31,15 @@ const HeroSlider = () => {
             {slides.map((slide, index) => {
                 const { title, bg, btnText } = slide
                 return (
-                    <SwiperSlide key={index} className='h-full relative flex justify-center items-center'>
-                        <div className='z-20 text-white text-center'>
+                    <SwiperSlide key={index} className='relative flex items-center justify-center h-full'>
+                        <div className='z-20 text-center text-white'>
                             <div className='uppercase font-tertiary tracking-[6px] mb-5'>
                                 Just Enjoy and Relax
                             </div>
                             <h1 className='text-[32px] font-primary uppercase tracking-[2px] max-w-[920px] lg:text-[68px] mb-4'>
                                 {title}
                             </h1>
-                            <button className='btn btn-lg btn-primary mx-auto'>{btnText}</button>
+                            <button className='mx-auto btn btn-lg btn-primary'>{btnText}</button>
                         </div>
                         <div className='absolute top-0 w-full h-full'>
                             <img className='object-cover w-full h-full' src={bg} alt="image" />

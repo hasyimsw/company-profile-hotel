@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom'
 const NotFound = () => {
   return (
     <>
-      <section className='not-found relative flex flex-col gap-y-2 items-center justify-center'>
+      <section className='relative flex flex-col items-center justify-center not-found gap-y-2'>
         <div className='absolute w-full h-full bg-black/70'></div>
-        <h1 className='text-7xl text-white font-bold z-10'>404</h1>
-        <h3 className='text-5xl text-white font-semibold z-10'>Page Not Found</h3>
-        <Link to={'/'} className='text-center underline text-white z-10'>go to home</Link>
+        <h1 className='z-10 font-bold text-white text-7xl'>404</h1>
+        <h3 className='z-10 text-5xl font-semibold text-white'>Page Not Found</h3>
+        <Link to={'/'} className='z-10 text-center text-white underline'>go to home</Link>
       </section>
     </>
   )

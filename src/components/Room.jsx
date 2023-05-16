@@ -9,7 +9,7 @@ const Room = ({ room }) => {
         <div className='bg-white shadow-2xl min-h-[500px] group'>
             {/* image */}
             <div className='overflow-hidden'>
-                <img className='group-hover:scale-110 transition-all duration-500 w-full' src={image} alt="image" />
+                <img className='w-full transition-all duration-500 group-hover:scale-110' src={image} alt="image" />
             </div>
             {/* Details */}
             <div className='bg-white shadow-lg max-w-[300px] mx-auto h-[60px] -translate-y-1/2 flex items-center justify-center uppercase font-tertiary tracking-[1px] font-semibold text-base'>
@@ -19,7 +19,7 @@ const Room = ({ room }) => {
                         <div className='text-accent'>
                             <BsArrowsFullscreen className='text-base' />
                         </div>
-                        <div className='flex gap-x-1 text-sm'>
+                        <div className='flex text-sm gap-x-1'>
                             <p>Size</p>
                             <p>{size}m2</p>
                         </div>
@@ -29,7 +29,7 @@ const Room = ({ room }) => {
                         <div className='text-accent'>
                             <BsPeople className='text-base' />
                         </div>
-                        <div className='flex gap-x-1 text-sm'>
+                        <div className='flex text-sm gap-x-1'>
                             <p>Max People</p>
                             <p>{maxPerson}</p>
                         </div>

@@ -30,10 +30,10 @@ const RoomDetails = () => {
                     {/* overlay */}
                     <div className='absolute w-full h-full bg-black/70'></div>
                     {/* title */}
-                    <h1 className='text-6xl text-white z-20 font-primary text-center'>{name} Details</h1>
+                    <h1 className='z-20 text-6xl text-center text-white font-primary'>{name} Details</h1>
                 </div>
                 <div className='container mx-auto'>
-                    <div className='flex flex-col lg:flex-row h-full py-24'>
+                    <div className='flex flex-col h-full py-24 lg:flex-row'>
                         {/* left */}
                         <div className='w-full h-full lg:w-[60%] px-6'>
                             <h2 className='h2'>{name}</h2>
@@ -41,13 +41,13 @@ const RoomDetails = () => {
                             <img className='mb-8' src={imageLg} alt="Image" />
                             {/* Fasilitas */}
                             <div className='mt-12'>
-                                <h3 className='h3 mb-3'>Room Facilities</h3>
+                                <h3 className='mb-3 h3'>Room Facilities</h3>
                                 <p className='mb-12'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, vero. Ut illum earum fugit veniam, quam labore aut, odio nobis aspernatur repellat exercitationem explicabo velit vel saepe dignissimos rem consequatur?</p>
                                 {/* Grid */}
                                 <div className='grid grid-cols-3 gap-4 mb-12'>
                                     {facilities.map((item, index) => {
                                         const { name, icon } = item
-                                        return <div key={index} className='flex items-center gap-x-3 flex-1'>
+                                        return <div key={index} className='flex items-center flex-1 gap-x-3'>
                                             <div className='text-3xl text-accent'>{icon}</div>
                                             <div className='text-base text-accent'>{name}</div>
                                         </div>
@@ -58,8 +58,8 @@ const RoomDetails = () => {
                         {/* right */}
                         <div className='w-full h-full lg:w-[40%]'>
                             {/* reservation */}
-                            <div className='py-8 px-6 bg-accent/20 mb-12'>
-                                <div className='flex flex-col space-y-4 mb-4'>
+                            <div className='px-6 py-8 mb-12 bg-accent/20'>
+                                <div className='flex flex-col mb-4 space-y-4'>
                                     <h3>Your Reservation</h3>
                                     <div className='h-[60px]'>
                                         <CheckIn />
@@ -74,7 +74,7 @@ const RoomDetails = () => {
                                         <KidsDropdown />
                                     </div>
                                 </div>
-                                <button className='btn btn-lg btn-primary w-full'>book now for ${price}</button>
+                                <button className='w-full btn btn-lg btn-primary'>book now for ${price}</button>
                             </div>
                             {/* rules */}
                             <div>
