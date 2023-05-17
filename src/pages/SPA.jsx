@@ -3,12 +3,10 @@ import React from 'react'
 const SPA = () => {
   return (
     <>
-      <section className='container h-screen mx-auto bg-black/40'>
-        <div className='flex items-center justify-center pb-10 pt-52'>
-          <span className='font-bold text-7xl'>Durung Enek Halaman About</span>
-        </div>
-        <div className='text-center'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ad asperiores natus eius distinctio a necessitatibus autem corrupti vitae dicta atque laboriosam tempore quo eaque ipsum sequi, dolore sint voluptatibus totam. Officia hic, quibusdam, sit quidem voluptate explicabo ducimus est maxime iusto temporibus numquam reiciendis repellendus omnis tenetur optio. Dicta doloribus amet placeat ducimus voluptatum quod beatae error veniam cumque. Ea laborum quo distinctio vel doloremque veritatis numquam voluptate aperiam voluptates nam cum exercitationem totam earum obcaecati, saepe illum deserunt eum dolor consequuntur repellat architecto animi dignissimos atque! Aliquam architecto sint eaque est magni itaque porro, repellendus facilis placeat illum?
+      <section className='py-24 bg-black/30'>
+        <div className="container h-screen mx-auto">
+          <h1 className='pt-24 pb-8 font-bold text-center text-7xl'>Durung Enek Halamane Bosss</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam tempora minima facilis iusto est, quasi laudantium assumenda, amet deserunt dolores, necessitatibus laborum pariatur. Molestias impedit suscipit, nesciunt debitis sit, eos quo nostrum quas eveniet ratione ab odit cupiditate iusto reiciendis veniam laboriosam aut minus eius rem vitae ipsam ullam? Non labore autem temporibus odit et! Sed, necessitatibus! Unde cum ullam ipsum modi veniam fugit repudiandae! Facere sit odit ipsum unde nemo dicta, exercitationem doloribus! Odio omnis ratione, labore quos et atque, nulla numquam dolor laboriosam tempora similique soluta ex molestiae iste reiciendis vitae veritatis deserunt. Velit corporis suscipit nemo dolor?</p>
         </div>
       </section>
     </>

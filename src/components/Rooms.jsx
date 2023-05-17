@@ -12,6 +12,7 @@ const Rooms = () => {
             {loading && (
                 <div className='fixed top-0 bottom-0 z-50 flex items-center justify-center w-full h-screen bg-black/90'>
                     <SpinnerDotted color='#ffc000' />
+                    <span className='uppercase font-primary'>Loading...</span>
                 </div>
             )}
             <div className="container mx-auto lg:px-0">
