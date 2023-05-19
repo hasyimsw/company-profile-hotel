@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
-import { RoomContext } from '../context/RoomContext'
 import Room from './Room'
+import { RoomContext } from '../context/RoomContext'
 import { SpinnerDotted } from 'spinners-react'
 
 const Rooms = () => {
@@ -11,8 +11,10 @@ const Rooms = () => {
             {/* overlay & spinner */}
             {loading && (
                 <div className='fixed top-0 bottom-0 z-50 flex items-center justify-center w-full h-screen bg-black/90'>
-                    <SpinnerDotted color='#ffc000' />
-                    <span className='uppercase font-primary'>Loading...</span>
+                    <div className='flex flex-col items-center justify-center'>
+                        <SpinnerDotted color='#ffc000' />
+                        <span className='mt-3 text-white uppercase font-secondary'>Loading...</span>
+                    </div>
                 </div>
             )}
             <div className="container mx-auto lg:px-0">

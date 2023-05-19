@@ -41,7 +41,7 @@ const Room = ({ room }) => {
                 <Link to={`/room/${id}`}>
                     <h3 className='h3'>{name}</h3>
                 </Link>
-                <p className='max-w-[300px] mx-auto mb-3 lg:mb-6 text-sm text-slate-500'>{description.slice(0, 56)}</p>
+                <p className='max-w-[300px] mx-auto mb-3 lg:mb-6 text-sm text-slate-500'>{description.slice(0, 60)}<Link to={`/room/${id}`} className='ml-1 underline cursor-pointer text-sky-500 hover:text-sky-600'>see more..</Link></p>
             </div>
             {/* button */}
             <Link to={`/room/${id}`} className='btn btn-secondary btn-sm max-w-[240px] mx-auto shadow-md'>
