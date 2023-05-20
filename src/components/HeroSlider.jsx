@@ -6,20 +6,21 @@ import { EffectFade, Autoplay } from 'swiper'
 import Img1 from '/img/heroSlider/1.jpg'
 import Img2 from '/img/heroSlider/2.jpg'
 import Img3 from '/img/heroSlider/3.jpg'
+import { Link } from 'react-router-dom'
 
 const slides = [
     {
-        title: 'Your Luxury Hotel For Vacation',
+        title: 'Your Luxury Hotel For Vacation With fucking people',
         bg: Img1,
         btnText: 'See our rooms',
     },
     {
-        title: 'Your Luxury Hotel For Vacation',
+        title: 'Your Luxury Hotel For Vacation With fucking people',
         bg: Img2,
         btnText: 'See our rooms',
     },
     {
-        title: 'Your Luxury Hotel For Vacation',
+        title: 'Your Luxury Hotel For Vacation With fucking people',
         bg: Img3,
         btnText: 'See our rooms',
     },
@@ -39,7 +40,9 @@ const HeroSlider = () => {
                             <h1 className='text-[32px] font-primary uppercase tracking-[2px] max-w-[920px] lg:text-[68px] mb-4'>
                                 {title}
                             </h1>
-                            <button className='mx-auto btn btn-lg btn-primary'>{btnText}</button>
+                            <button className='mx-auto btn btn-lg btn-primary'>
+                                <Link to={'/room'} className='mx-auto btn btn-lg btn-primary'>{btnText}</Link>
+                            </button>
                         </div>
                         <div className='absolute top-0 w-full h-full'>
                             <img className='object-cover w-full h-full' src={bg} alt="image" />
