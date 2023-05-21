@@ -6,6 +6,7 @@ import { EffectFade, Autoplay } from 'swiper'
 import Img1 from '/img/heroSlider/1.jpg'
 import Img2 from '/img/heroSlider/2.jpg'
 import Img3 from '/img/heroSlider/3.jpg'
+import Img4 from '/img/heroSlider/4.jpg'
 import { Link } from 'react-router-dom'
 
 const slides = [
@@ -22,6 +23,11 @@ const slides = [
     {
         title: 'Your Luxury Hotel For Vacation With fucking people',
         bg: Img3,
+        btnText: 'See our rooms',
+    },
+    {
+        title: 'Your Luxury Hotel For Vacation With fucking people',
+        bg: Img4,
         btnText: 'See our rooms',
     },
 ]

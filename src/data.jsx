@@ -15,6 +15,8 @@ import Room7Img from '/img/rooms/7.png';
 import Room7ImgLg from '/img/rooms/7-lg.png';
 import Room8Img from '/img/rooms/8.png';
 import Room8ImgLg from '/img/rooms/8-lg.png';
+import Room9Img from '/img/rooms/9.png';
+import Room9ImgLg from '/img/rooms/9-lg.png';
 // import icons
 import {
   FaWifi,
@@ -195,5 +197,26 @@ export const roomData = [
     price: 499,
     image: Room8Img,
     imageLg: Room8ImgLg,
+  },
+  {
+    id: 9,
+    name: 'Signature Room',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea placeat eos sed voluptas unde veniam eligendi a. Quaerat molestiae hic omnis temporibus quos consequuntur nam voluptatum ea accusamus, corrupti nostrum eum placeat quibusdam quis beatae quae labore earum architecto aliquid debitis.',
+    facilities: [
+      { name: 'Wifi', icon: <FaWifi /> },
+      { name: 'Coffee', icon: <FaCoffee /> },
+      { name: 'Bath', icon: <FaBath /> },
+      { name: 'Parking Space', icon: <FaParking /> },
+      { name: 'Swimming Pool', icon: <FaSwimmingPool /> },
+      { name: 'Breakfast', icon: <FaHotdog /> },
+      { name: 'GYM', icon: <FaStopwatch /> },
+      { name: 'Drinks', icon: <FaCocktail /> },
+    ],
+    size: 64,
+    maxPerson: 6,
+    price: 227,
+    image: Room9Img,
+    imageLg: Room9ImgLg,
   },
 ];
