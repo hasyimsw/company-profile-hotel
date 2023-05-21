@@ -41,8 +41,8 @@ const RoomDetails = () => {
                             <img className='mb-8' src={imageLg} alt="Image" />
                             {/* Fasilitas */}
                             <div className='mt-12'>
-                                <h3 className='mb-3 h3'>Room Facilities</h3>
-                                <p className='mb-12'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, vero. Ut illum earum fugit veniam, quam labore aut, odio nobis aspernatur repellat exercitationem explicabo velit vel saepe dignissimos rem consequatur?</p>
+                                <h3 className='mb-2 h3'>Room Facilities</h3>
+                                <p className='mb-10'>Kamar ini memiliki beberapa fasilitas yang dapat anda pilih:</p>
                                 {/* Grid */}
                                 <div className='grid grid-cols-3 gap-4 mb-12'>
                                     {facilities.map((item, index) => {
@@ -75,29 +75,6 @@ const RoomDetails = () => {
                                     </div>
                                 </div>
                                 <button className='w-full btn btn-lg btn-primary'>book now for ${price}</button>
-                            </div>
-                            {/* rules */}
-                            <div>
-                                <h3 className='h3'>Hotel Rules</h3>
-                                <p className='mb-6'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam amet asperiores voluptatum!</p>
-                                <ul className='flex flex-col gap-y-4'>
-                                    <li className='flex items-center gap-x-4'>
-                                        <FaCheck className='text-accent' />
-                                        Check-in 3:00 PM - 9:00 PM
-                                    </li>
-                                    <li className='flex items-center gap-x-4'>
-                                        <FaCheck className='text-accent' />
-                                        Check-out 10:30 AM
-                                    </li>
-                                    <li className='flex items-center gap-x-4'>
-                                        <FaCheck className='text-accent' />
-                                        No Pets
-                                    </li>
-                                    <li className='flex items-center gap-x-4'>
-                                        <FaCheck className='text-accent' />
-                                        No Smoking
-                                    </li>
-                                </ul>
                             </div>
                         </div>
                     </div>

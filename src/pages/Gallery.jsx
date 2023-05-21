@@ -1,6 +1,6 @@
 import React from 'react'
 
-const SPA = () => {
+const Gallery = () => {
   return (
     <>
       <section className='py-24 bg-black/30'>
@@ -13,4 +13,4 @@ const SPA = () => {
   )
 }
 
-export default SPA
+export default Gallery

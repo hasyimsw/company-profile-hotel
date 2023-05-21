@@ -1,5 +1,5 @@
 import React, { createContext, useEffect, useState } from 'react'
-import { roomData } from '../data'
+import { roomData } from '../data/data'
 
 export const RoomContext = createContext()
 

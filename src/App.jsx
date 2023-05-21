@@ -6,7 +6,7 @@ import NotFound from "./pages/NotFound"
 import Contact from "./pages/Contact"
 import Header from "./layouts/Header"
 import Footer from "./layouts/Footer"
-import SPA from "./pages/SPA"
+import Gallery from "./pages/Gallery"
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/room" element={<RoomList />} />
         <Route path="/room/:id" element={<RoomDetails />} />
-        <Route path="/spa" element={<SPA />} />
+        <Route path="/gallery" element={<Gallery />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/*" element={<NotFound />} />
       </Routes>

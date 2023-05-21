@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import LogoWhite from '/img/logo-white.svg'
-import LogoDark from '/img/logo-dark.svg'
+import LogoWhite from '/img/logo.svg'
+import LogoDark from '/img/logo.svg'
 import { NavLink } from 'react-router-dom'
 
 const Header = () => {
@@ -17,9 +17,9 @@ const Header = () => {
                 {/* logo */}
                 <NavLink to={'/'}>
                     {nav ? (
-                        <img src={LogoDark} className='w-[160px]' />
+                        <img src={LogoDark} className='w-[100px]' />
                     ) : (
-                        <img src={LogoWhite} className='w-[160px]' />
+                        <img src={LogoWhite} className='w-[100px]' />
                     )}
                 </NavLink>
                 {/* nav */}
@@ -27,7 +27,7 @@ const Header = () => {
                     <NavLink to="/" className='transition hover:text-accent nav-link'>Home</NavLink>
                     <NavLink to="/about" className='transition hover:text-accent nav-link'>About</NavLink>
                     <NavLink to="/room" className='transition hover:text-accent nav-link'>Rooms</NavLink>
-                    <NavLink to="/spa" className='transition hover:text-accent nav-link'>Spa</NavLink>
+                    <NavLink to="/gallery" className='transition hover:text-accent nav-link'>Gallery</NavLink>
                     <NavLink to="/contact" className='transition hover:text-accent nav-link'>Contact</NavLink>
                 </nav>
             </div>

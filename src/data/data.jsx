@@ -32,9 +32,9 @@ import {
 export const roomData = [
   {
     id: 1,
-    name: 'Superior Room',
+    name: 'Kamar Mewah',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea placeat eos sed voluptas unde veniam eligendi a. Quaerat molestiae hic omnis temporibus quos consequuntur nam voluptatum ea accusamus, corrupti nostrum eum placeat quibusdam quis beatae quae labore earum architecto aliquid debitis.',
+      'Nikmati pengalaman tinggal yang mewah di kamar kami yang penuh dengan sentuhan elegan dan desain modern. Dilengkapi dengan tempat tidur king-size, furnitur mewah, dan pemandangan spektakuler, kamar ini menawarkan kenyamanan tingkat tinggi dan suasana yang tenang.',
     facilities: [
       { name: 'Wifi', icon: <FaWifi /> },
       { name: 'Coffee', icon: <FaCoffee /> },
@@ -53,9 +53,9 @@ export const roomData = [
   },
   {
     id: 2,
-    name: 'Signature Room',
+    name: 'Suite Keluarga',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea placeat eos sed voluptas unde veniam eligendi a. Quaerat molestiae hic omnis temporibus quos consequuntur nam voluptatum ea accusamus, corrupti nostrum eum placeat quibusdam quis beatae quae labore earum architecto aliquid debitis.',
+      ' Suite luas ini dirancang khusus untuk kenyamanan keluarga Anda. Dengan dua kamar tidur terpisah dan ruang tamu yang luas, suite ini menyediakan ruang yang cukup untuk seluruh keluarga Anda bersantai dan bersenang-senang. Dilengkapi dengan fasilitas modern dan dekorasi yang menyenangkan, ini adalah pilihan ideal untuk liburan bersama keluarga.',
     facilities: [
       { name: 'Wifi', icon: <FaWifi /> },
       { name: 'Coffee', icon: <FaCoffee /> },
@@ -74,9 +74,9 @@ export const roomData = [
   },
   {
     id: 3,
-    name: 'Deluxe Room',
+    name: 'Kamar Eksekutif',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea placeat eos sed voluptas unde veniam eligendi a. Quaerat molestiae hic omnis temporibus quos consequuntur nam voluptatum ea accusamus, corrupti nostrum eum placeat quibusdam quis beatae quae labore earum architecto aliquid debitis.',
+      'Untuk tamu bisnis yang menginginkan kenyamanan dan fasilitas lengkap, kamar eksekutif kami adalah pilihan yang sempurna. Dilengkapi dengan meja kerja yang luas, koneksi Wi-Fi cepat, dan fasilitas konferensi, kamar ini menciptakan lingkungan yang ideal untuk bekerja dan bersantai setelah hari yang sibuk.',
     facilities: [
       { name: 'Wifi', icon: <FaWifi /> },
       { name: 'Coffee', icon: <FaCoffee /> },
@@ -95,9 +95,9 @@ export const roomData = [
   },
   {
     id: 4,
-    name: 'Luxury Room',
+    name: 'Kamar Kelas Menengah',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea placeat eos sed voluptas unde veniam eligendi a. Quaerat molestiae hic omnis temporibus quos consequuntur nam voluptatum ea accusamus, corrupti nostrum eum placeat quibusdam quis beatae quae labore earum architecto aliquid debitis.',
+      'Kamar nyaman ini menyediakan akomodasi berkualitas dengan harga terjangkau. Dilengkapi dengan fasilitas modern dan tempat tidur yang nyaman, kamar ini adalah pilihan ideal untuk wisatawan yang mencari kenyamanan dan nilai terbaik.',
     facilities: [
       { name: 'Wifi', icon: <FaWifi /> },
       { name: 'Coffee', icon: <FaCoffee /> },
@@ -116,9 +116,9 @@ export const roomData = [
   },
   {
     id: 5,
-    name: 'Luxury Suite Room',
+    name: 'Suite Romantis',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea placeat eos sed voluptas unde veniam eligendi a. Quaerat molestiae hic omnis temporibus quos consequuntur nam voluptatum ea accusamus, corrupti nostrum eum placeat quibusdam quis beatae quae labore earum architecto aliquid debitis.',
+      'Suite ini diciptakan khusus untuk pasangan yang mencari pengalaman romantis. Dengan dekorasi yang anggun dan suasana yang intim, suite ini menawarkan privasi dan kenyamanan. Nikmati mandi bathtub berendam bersama atau bersantai di balkon pribadi sambil menikmati pemandangan matahari terbenam yang memukau.',
     facilities: [
       { name: 'Wifi', icon: <FaWifi /> },
       { name: 'Coffee', icon: <FaCoffee /> },
@@ -137,9 +137,9 @@ export const roomData = [
   },
   {
     id: 6,
-    name: 'Deluxe Room',
+    name: 'Kamar Keluarga Premium',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea placeat eos sed voluptas unde veniam eligendi a. Quaerat molestiae hic omnis temporibus quos consequuntur nam voluptatum ea accusamus, corrupti nostrum eum placeat quibusdam quis beatae quae labore earum architecto aliquid debitis.',
+      'Kamar ini dirancang untuk kenyamanan keluarga besar. Dengan tempat tidur tambahan dan fasilitas lengkap, kamar ini menawarkan ruang yang cukup untuk seluruh keluarga berkumpul. Anda dapat menikmati waktu bersama di area ruang tamu yang luas atau bersantai di teras pribadi dengan pemandangan taman yang indah.',
     facilities: [
       { name: 'Wifi', icon: <FaWifi /> },
       { name: 'Coffee', icon: <FaCoffee /> },
@@ -158,9 +158,9 @@ export const roomData = [
   },
   {
     id: 7,
-    name: 'Luxury Room',
+    name: 'Kamar Superior',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea placeat eos sed voluptas unde veniam eligendi a. Quaerat molestiae hic omnis temporibus quos consequuntur nam voluptatum ea ccusamus, corrupti nostrum eum placeat quibusdam quis beatae quae labore earum architecto aliquid debitis.',
+      'Nikmati pemandangan spektakuler langsung dari kamar tidur Anda. Dilengkapi dengan jendela besar yang menghadap ke laut, kamar ini menawarkan pengalaman menginap yang luar biasa. Tidur di atas kasur yang nyaman sambil mendengarkan suara ombak yang menenangkan adalah cara sempurna untuk bersantai dan meremajakan diri.',
     facilities: [
       { name: 'Wifi', icon: <FaWifi /> },
       { name: 'Coffee', icon: <FaCoffee /> },
@@ -179,9 +179,9 @@ export const roomData = [
   },
   {
     id: 8,
-    name: 'Deluxe Room',
+    name: 'Kamar Tematik',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea placeat eos sed voluptas unde veniam eligendi a. Quaerat molestiae hic omnis temporibus quos consequuntur nam voluptatum ea accusamus, corrupti nostrum eum placeat quibusdam quis beatae quae labore earum architecto aliquid debitis.',
+      'Untuk tamu yang mencari pengalaman yang unik, kami menawarkan kamar tematik yang menarik. Setiap kamar memiliki tema yang berbeda, mulai dari desain retro yang klasik hingga gaya modern yang kontemporer. Setiap elemen dirancang dengan teliti untuk menciptakan atmosfer yang memikat dan tak terlupakan.',
     facilities: [
       { name: 'Wifi', icon: <FaWifi /> },
       { name: 'Coffee', icon: <FaCoffee /> },
@@ -200,9 +200,9 @@ export const roomData = [
   },
   {
     id: 9,
-    name: 'Signature Room',
+    name: 'Kamar Hemat',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea placeat eos sed voluptas unde veniam eligendi a. Quaerat molestiae hic omnis temporibus quos consequuntur nam voluptatum ea accusamus, corrupti nostrum eum placeat quibusdam quis beatae quae labore earum architecto aliquid debitis.',
+      'Untuk tamu yang menginginkan kenyamanan tanpa harus menguras kantong, kami menawarkan kamar hemat yang nyaman dan fungsional. Dilengkapi dengan semua fasilitas dasar yang diperlukan, kamar ini memberikan nilai luar biasa tanpa mengorbankan kenyamanan.',
     facilities: [
       { name: 'Wifi', icon: <FaWifi /> },
       { name: 'Coffee', icon: <FaCoffee /> },

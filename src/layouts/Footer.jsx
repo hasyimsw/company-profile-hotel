@@ -1,20 +1,17 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import LogoWhite from '/img/logo-white.svg'
+import LogoWhite from '/img/logo.svg'
 import { BsFacebook, BsInstagram, BsTwitter } from 'react-icons/bs'
 import { FaTiktok } from 'react-icons/fa'
 
 const Footer = () => {
     return (
-        <footer className='py-8 bg-primary'>
-            <div className='container mx-auto'>
-                <div className='items-start text-white md:flex md:justify-between'>
+        <footer className='pt-8 bg-primary'>
+            <div className='container pb-5 mx-auto'>
+                <div className='items-start space-y-6 text-white md:flex md:justify-between'>
                     <div>
-                        <Link to="/" className='mb-2'>
-                            <img src={LogoWhite} alt="Logo" />
-                        </Link>
                         <h1 className='mt-2 text-3xl font-primary'>Phone Support</h1>
-                        <p className='mb-3 text-xs uppercase text-white/60'>24 Hours A Day</p>
+                        <p className='mb-2 text-xs uppercase text-white/60'>24 Hours A Day</p>
                         <span className='text-2xl font-tertiary'>+0123 456 789</span>
                     </div>
                     <div>
@@ -35,6 +32,11 @@ const Footer = () => {
                             <button className='btn btn-primary'>Subscribe</button>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div className='border-t-[0.1px] border-white/30'>
+                <div className='container pt-2 pb-4 mx-auto text-white/60'>
+                    Copyright &copy; 2023 - Hotel Esex-Esex. All Right Reserved
                 </div>
             </div>
         </footer>
