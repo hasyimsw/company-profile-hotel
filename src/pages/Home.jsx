@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import HeroSlider from '../components/HeroSlider'
+import Button from '../components/Elements/Button'
 
 const Home = () => {
     return (
@@ -12,9 +13,9 @@ const Home = () => {
                     <h1 className='text-[32px] font-primary uppercase tracking-[2px] max-w-[920px] lg:text-[68px] mb-4 flex justify-center mx-auto'>
                         Your Luxury Hotel For Vacation
                     </h1>
-                    <button className='mx-auto btn btn-lg btn-primary'>
-                        <Link to={'/room'} className='mx-auto btn btn-lg btn-primary'>See Our Rooms</Link>
-                    </button>
+                    <Button variant='mx-auto h-[60px] bg-accent'>
+                        <Link to={'/room'}>See Our Rooms</Link>
+                    </Button>
                 </div>
             </div>
             <HeroSlider />

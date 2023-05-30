@@ -1,6 +1,4 @@
 import Rooms from '../../components/Rooms'
-import React from 'react'
-import { Link } from 'react-router-dom'
 import BookForm from '../../components/BookForm'
 import HeroSlider from '../../components/HeroSlider'
 

@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import { useContext } from 'react'
 import { RoomContext } from '../context/RoomContext'
 import { Menu } from '@headlessui/react'
 import { BsChevronDown } from 'react-icons/bs'

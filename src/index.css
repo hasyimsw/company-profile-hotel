@@ -2,48 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-    body {
-        @apply font-secondary text-primary;
-    }
-    input::placeholder {
-        @apply text-primary;
-    }
-    .h2 {
-        @apply font-primary text-[45px] mb-4;
-    }
-    .h3 {
-        @apply text-2xl font-primary font-semibold tracking-[1px] mb-2;
-    }
-    .btn {
-        @apply text-[15px] tracking-[3px] font-tertiary uppercase text-white flex-1 transition-all px-8 flex justify-center items-center;
-    }
-    .btn-sm {
-        @apply h-[48px];
-    }
-    .btn-lg {
-        @apply h-[60px];
-    }
-    .btn-primary {
-        @apply bg-accent hover:bg-accent-hover;
-    }
-    .btn-secondary {
-        @apply bg-primary hover:bg-accent;
-    }
-    .btn-white {
-        @apply bg-white text-[#0a0a0a];
-    }
-    .nav-link.active {
-        @apply text-accent;
-    }
-    .not-found {
-        background-image: url('/img/notfound.jpeg');
-        background-size: cover;
-        background-position: center;
-        height: 100vh;
-        width: 100vw;
-    }
-    .bg-room-details {
-        background-image: url('/img/room.jpg');
-    }
+body {
+    font-family: 'Barlow';
+}
+
+input::placeholder {
+    color: #0a0a0a;
+}
+
+.btn-sm {
+    height: 48px;
+}
+
+.btn-lg {
+    height: 60px;
+}
+
+.btn-primary {
+    background-color: #0a0a0a;
+}
+
+.btn-secondary:hover {
+    background-color: #967142;
+}
+
+.btn-secondary:hover {
+    background-color: #967142;
+}
+
+.btn-white {
+    background-color: white;
+    color: #0a0a0a;
+}
+
+.nav-link.active {
+    color: #a37d4c;
+}
+
+.not-found {
+    background-image: url('/img/notfound.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.bg-room-details {
+    background-image: url('/img/room.jpg');
 }

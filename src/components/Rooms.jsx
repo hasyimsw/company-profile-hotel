@@ -19,7 +19,7 @@ const Rooms = () => {
             )}
             <div className="container mx-auto lg:px-0">
                 <div className='text-center'>
-                    <div className='font-tertiary text-base uppercase tracking-[6px]'>Hotel &#38; Spa Adina</div>
+                    <div className='font-tertiary text-base uppercase tracking-[6px]'>Hotel Esex-Esex</div>
                     <h2 className='font-primary text-[45px] mb-4'>Rooms &#38; Suites</h2>
                 </div>
                 {/* Grid */}

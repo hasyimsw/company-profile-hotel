@@ -1,9 +1,10 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import CheckIn from "./CheckIn";
 import AdultsDropdown from "./AdultsDropdown";
 import CheckOut from "./CheckOut";
 import KidsDropdown from "./KidsDropdown";
 import { RoomContext } from "../context/RoomContext";
+import Button from "../components/Elements/Button"
 
 const BookForm = () => {
     const { handleClick } = useContext(RoomContext);
@@ -24,7 +25,9 @@ const BookForm = () => {
                     <KidsDropdown />
                 </div>
                 {/* button */}
-                <button onClick={(e) => handleClick(e)} type="submit" className="btn btn-primary">Book Now</button>
+                <Button onClick={(e) => handleClick(e)} type="submit" variant="bg-accent hover:bg-accent-hover">
+                    Book Now
+                </Button>
             </div>
         </form>
     );

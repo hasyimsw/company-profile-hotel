@@ -1,6 +1,6 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 import { BsArrowsFullscreen, BsPeople, } from 'react-icons/bs'
+import Button from "./Elements/Button"
 
 const Room = ({ room }) => {
     const { id, name, image, size, maxPerson, description, price } = room
@@ -39,14 +39,16 @@ const Room = ({ room }) => {
             {/* name & description */}
             <div className='text-center'>
                 <Link to={`/room/${id}`}>
-                    <h3 className='h3'>{name}</h3>
+                    <h3 className='text-2xl font-primary font-semibold tracking-[1px] mb-2'>{name}</h3>
                 </Link>
                 <p className='max-w-[300px] mx-auto mb-3 lg:mb-6 text-sm text-slate-500'>{description.substring(0, 100)}...<Link to={`/room/${id}`} className='ml-1 underline cursor-pointer text-sky-500 hover:text-sky-600'>see more</Link></p>
             </div>
             {/* button */}
-            <Link to={`/room/${id}`} className='btn btn-secondary btn-sm max-w-[240px] mx-auto shadow-md'>
-                Book now from ${price}
-            </Link>
+            <Button variant="bg-primary hover:bg-accent h-[48px] max-w-[240px] mx-auto shadow-md">
+                <Link to={`/room/${id}`}>
+                    Book now from ${price}
+                </Link>
+            </Button>
         </div>
     )
 }

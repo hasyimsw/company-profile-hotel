@@ -1,8 +1,7 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import LogoWhite from '/img/logo.svg'
+// import LogoWhite from '/img/logo.svg'
 import { BsFacebook, BsInstagram, BsTwitter } from 'react-icons/bs'
 import { FaTiktok } from 'react-icons/fa'
+import Button from "../components/Elements/Button"
 
 const Footer = () => {
     return (
@@ -29,7 +28,7 @@ const Footer = () => {
                         <p className='mb-1 text-xs uppercase md:mb-4 text-white/60'>Sign Up For Special Offer</p>
                         <div className='flex'>
                             <input type="email" className='w-full px-4 py-2 text-black bg-grey-200 focus:outline-none' placeholder='Email' />
-                            <button className='btn btn-primary'>Subscribe</button>
+                            <Button variant="bg-accent hover:bg-accent-hover">Subscribe</Button>
                         </div>
                     </div>
                 </div>

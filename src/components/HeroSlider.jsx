@@ -1,4 +1,3 @@
-import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/effect-fade'
@@ -7,7 +6,6 @@ import Img1 from '/img/heroSlider/1.jpg'
 import Img2 from '/img/heroSlider/2.jpg'
 import Img3 from '/img/heroSlider/3.jpg'
 import Img4 from '/img/heroSlider/4.jpg'
-import { Link } from 'react-router-dom'
 
 const slides = [
     {

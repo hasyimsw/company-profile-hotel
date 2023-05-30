@@ -1,4 +1,3 @@
-import React, { useContext } from 'react'
 import { useParams } from 'react-router-dom'
 import AdultsDropdown from '../../components/AdultsDropdown'
 import CheckIn from '../../components/CheckIn'
@@ -6,8 +5,9 @@ import CheckOut from '../../components/CheckOut'
 import KidsDropdown from '../../components/KidsDropdown'
 import ScrollToTop from '../../components/ScrollToTop'
 import { RoomContext } from '../../context/RoomContext'
-import { FaCheck } from 'react-icons/fa'
 import NotFound from '../NotFound'
+import { useContext } from 'react'
+import Button from '../../components/Elements/Button'
 
 const RoomDetails = () => {
     const { rooms } = useContext(RoomContext)
@@ -36,12 +36,12 @@ const RoomDetails = () => {
                     <div className='flex flex-col h-full py-24 lg:flex-row'>
                         {/* left */}
                         <div className='w-full h-full lg:w-[60%] px-6'>
-                            <h2 className='h2'>{name}</h2>
+                            <h2 className='font-primary text-5xl mb-4'>{name}</h2>
                             <p className='mb-8'>{description}</p>
                             <img className='mb-8' src={imageLg} alt="Image" />
                             {/* Fasilitas */}
                             <div className='mt-12'>
-                                <h3 className='mb-2 h3'>Room Facilities</h3>
+                                <h3 className='text-2xl font-primary font-semibold tracking-[1px] mb-2'>Room Facilities</h3>
                                 <p className='mb-10'>Kamar ini memiliki beberapa fasilitas yang dapat anda pilih:</p>
                                 {/* Grid */}
                                 <div className='grid grid-cols-3 gap-4 mb-12'>
@@ -60,7 +60,7 @@ const RoomDetails = () => {
                             {/* reservation */}
                             <div className='px-6 py-8 mb-12 bg-accent/20'>
                                 <div className='flex flex-col mb-4 space-y-4'>
-                                    <h3>Your Reservation</h3>
+                                    <h3 className='font-semibold text-xl'>Your Reservation</h3>
                                     <div className='h-[60px]'>
                                         <CheckIn />
                                     </div>
@@ -74,7 +74,9 @@ const RoomDetails = () => {
                                         <KidsDropdown />
                                     </div>
                                 </div>
-                                <button className='w-full btn btn-lg btn-primary'>book now for ${price}</button>
+                                <Button variant='w-full bg-accent hover:bg-accent-hover h-[60px]'>
+                                    book now for ${price}
+                                </Button>
                             </div>
                         </div>
                     </div>
