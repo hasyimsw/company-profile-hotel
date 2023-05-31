@@ -6,7 +6,7 @@ import RoomDetails from "./pages/rooms/RoomDetails"
 import Gallery from "./pages/Gallery"
 import Contact from "./pages/Contact"
 import Header from "./layouts/Header"
-import Footer from "./Layouts/Footer"
+import Footer from "./layouts/Footer"
 import NotFound from "./pages/NotFound"
 
 function App() {
