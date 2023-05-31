@@ -1,10 +1,12 @@
 import Rooms from '../../components/Rooms'
 import BookForm from '../../components/BookForm'
-import HeroSlider from '../../components/HeroSlider'
+import HeroSlider from '../../components/Fragments/HeroSlider'
+import ScrollToTop from '../../components/ScrollToTop'
 
 const RoomList = () => {
   return (
     <div className='relative'>
+      <ScrollToTop />
       <div className='absolute top-0 z-10 h-[600px] lg:h-[860px] w-full bg-black/70'>
         <div className='text-center text-white pt-60 lg:pt-72'>
           <h1 className='text-[32px] font-primary uppercase tracking-[2px] max-w-[920px] lg:text-[68px] mb-4 flex justify-center mx-auto'>

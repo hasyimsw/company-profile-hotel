@@ -1,13 +1,13 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from "./pages/Home"
-import RoomDetails from "./pages/room/RoomDetails"
-import RoomList from "./pages/room"
 import About from "./pages/About"
-import NotFound from "./pages/NotFound"
+import RoomList from "./pages/rooms"
+import RoomDetails from "./pages/rooms/RoomDetails"
+import Gallery from "./pages/Gallery"
 import Contact from "./pages/Contact"
 import Header from "./layouts/Header"
-import Footer from "./layouts/Footer"
-import Gallery from "./pages/Gallery"
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Footer from "./Layouts/Footer"
+import NotFound from "./pages/NotFound"
 
 function App() {
   return (
@@ -16,8 +16,8 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/room" element={<RoomList />} />
-        <Route path="/room/:id" element={<RoomDetails />} />
+        <Route path="/rooms" element={<RoomList />} />
+        <Route path="/rooms/:id" element={<RoomDetails />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/*" element={<NotFound />} />

@@ -2,37 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-    font-family: 'Barlow';
+@layer base {
+    body {
+        @apply font-secondary;
+    }
 }
+
 
 input::placeholder {
-    color: #0a0a0a;
-}
-
-.btn-sm {
-    height: 48px;
-}
-
-.btn-lg {
-    height: 60px;
-}
-
-.btn-primary {
-    background-color: #0a0a0a;
-}
-
-.btn-secondary:hover {
-    background-color: #967142;
-}
-
-.btn-secondary:hover {
-    background-color: #967142;
-}
-
-.btn-white {
-    background-color: white;
-    color: #0a0a0a;
+    color: #686868;
 }
 
 .nav-link.active {

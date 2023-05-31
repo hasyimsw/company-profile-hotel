@@ -1,7 +1,10 @@
+import ScrollToTop from "../components/ScrollToTop"
+
 const About = () => {
   return (
     <>
       <section className='py-24 bg-black/30'>
+        <ScrollToTop />
         <div className="container h-screen mx-auto">
           <h1 className='pt-24 pb-8 font-bold text-center text-7xl'>Durung Enek Halamane Bosss</h1>
           <p>Selamat datang di website resmi hotel kami! Kami dengan bangga mengundang Anda untuk menikmati keramahan kami dan keindahan pemandangan yang menakjubkan. Hotel kami adalah tempat sempurna untuk menginap yang tak terlupakan.
