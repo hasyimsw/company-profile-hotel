@@ -3,7 +3,7 @@ import ScrollToTop from "../components/ScrollToTop"
 const Contact = () => {
   return (
     <>
-      <section className='pt-24 bg-primary'>
+      <section className='md:pt-24 pt-12 bg-primary'>
         <ScrollToTop />
         <iframe className='pt-12 md:pt-16 lg:pt-0 w-[100vw] h-[600px] border-none' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.281840350862!2d110.40647117520925!3d-7.759904892259204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a599bd3bdc4ef%3A0x6f1714b0c4544586!2sUniversitas%20Amikom%20Yogyakarta!5e0!3m2!1sid!2sid!4v1684634971179!5m2!1sid!2sid" loading="lazy" allowFullScreen="" referrerPolicy="no-referrer-when-downgrade"></iframe>
         <div className='px-4 py-16 bg-white'>
