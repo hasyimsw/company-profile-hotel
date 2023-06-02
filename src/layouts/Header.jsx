@@ -49,7 +49,7 @@ const Header = () => {
         {/* hamburger */}
         <div className='block md:hidden'>
           <MdMenuOpen
-            className={`h-8 w-8 text-accent cursor-pointer ${mobileMenu ? 'hidden' : 'block'}`}
+            className={`${nav ? 'text-accent' : 'text-white'} h-8 w-8 cursor-pointer ${mobileMenu ? 'hidden' : 'block'}`}
             onClick={() => setMobileMenu(!mobileMenu)}
           />
         </div>

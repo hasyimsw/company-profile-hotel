@@ -8,7 +8,8 @@ import CheckIn from '../../components/Fragments/CheckIn'
 import CheckOut from '../../components/Fragments/CheckOut'
 import AdultsDropdown from '../../components/Fragments/AdultsDropdown'
 import KidsDropdown from '../../components/Fragments/KidsDropdown'
-
+import {motion} from 'framer-motion'
+import { fadeIn } from '../../variants'
 
 const RoomDetails = () => {
   const { rooms } = useContext(RoomContext)
@@ -30,7 +31,15 @@ const RoomDetails = () => {
         {/* overlay */}
         <div className='absolute w-full h-full bg-black/70'></div>
         {/* title */}
-        <h1 className='z-20 text-6xl text-center text-white font-primary'>{name} Details</h1>
+        <motion.h1
+          variants={fadeIn('up', 0.3)}
+          initial='hidden'
+          whileInView={'show'}
+          viewport={{ once: false, amount: 0.7 }}
+          className='z-20 text-6xl text-center text-white font-primary'
+        >
+          {name} Details
+        </motion.h1>
       </div>
       <div className='container mx-auto'>
         <div className='flex flex-col h-full py-24 lg:flex-row'>
@@ -74,7 +83,7 @@ const RoomDetails = () => {
                   <KidsDropdown />
                 </div>
               </div>
-              <Button variant='w-full bg-accent hover:bg-accent-hover h-[60px]'>
+              <Button variant='w-full bg-accent hover:bg-accent-hover h-[60px] rounded-sm'>
                 book now for ${price}
               </Button>
             </div>

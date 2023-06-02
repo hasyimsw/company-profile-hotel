@@ -4,7 +4,7 @@ import Button from "../components/Elements/Button"
 
 const Footer = () => {
   return (
-    <footer className='pt-8 bg-primary'>
+    <footer className='pt-8 bg-primary border-t-[0.1px] border-white/30'>
       <div className='container pb-5 mx-auto'>
         <div className='space-y-4 text-white md:space-y-0 md:flex md:justify-between'>
           <div>
@@ -27,7 +27,9 @@ const Footer = () => {
             <p className='mb-1 text-xs uppercase md:mb-4 text-white/60'>Sign Up For Special Offer</p>
             <div className='flex'>
               <input type="email" className='w-full px-4 py-2 text-black bg-grey-200 focus:outline-none' placeholder='Email' />
-              <Button variant="bg-accent hover:bg-accent-hover">Subscribe</Button>
+              <Button variant="bg-accent hover:bg-accent-hover">
+                Subscribe
+              </Button>
             </div>
           </div>
         </div>

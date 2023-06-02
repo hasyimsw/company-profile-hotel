@@ -44,7 +44,7 @@ const Room = (proops) => {
         <p className='max-w-[300px] mx-auto mb-3 lg:mb-6 text-sm text-slate-500'>{description.substring(0, 100)}...<Link to={`/rooms/${id}`} className='ml-1 underline cursor-pointer text-sky-500 hover:text-sky-600'>see more</Link></p>
       </div>
       {/* button */}
-      <Button variant="bg-primary hover:bg-accent h-[48px] max-w-[240px] mx-auto shadow-md">
+      <Button variant="bg-primary hover:bg-accent h-[48px] max-w-[240px] mx-auto shadow-md rounded-sm">
         <Link to={`/rooms/${id}`}>
           Book now from ${price}
         </Link>
