@@ -5,7 +5,6 @@ import { EffectFade, Autoplay } from 'swiper'
 import Img1 from '/img/heroSlider/1.jpg'
 import Img2 from '/img/heroSlider/2.jpg'
 import Img3 from '/img/heroSlider/3.jpg'
-import Img4 from '/img/heroSlider/4.jpg'
 
 const slides = [
   {
@@ -17,14 +16,11 @@ const slides = [
   {
     bg: Img3,
   },
-  {
-    bg: Img4,
-  },
 ]
 
 const HeroSlider = () => {
   return (
-    <Swiper modules={[EffectFade, Autoplay]} effect={'fade'} loop={true} autoplay={{ delay: 3000, disableOnInteraction: false, }} className='heroSlider h-[600px] lg:h-[860px]'>
+    <Swiper modules={[EffectFade, Autoplay]} effect={'fade'} loop={true} autoplay={{ delay: 3000, disableOnInteraction: false, }} className='h-[600px] lg:h-[860px]'>
       {slides.map((slide, index) => {
         const { bg } = slide
         return (

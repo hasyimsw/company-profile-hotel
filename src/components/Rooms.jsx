@@ -4,7 +4,7 @@ import { RoomContext } from '../context/RoomContext'
 import { SpinnerDotted } from 'spinners-react'
 import Button from './Elements/Button'
 import { motion } from 'framer-motion'
-import { fadeIn } from '../variants'
+import { fadeIn, container } from '../variants'
 
 const Rooms = () => {
   const { rooms, loading } = useContext(RoomContext)
@@ -35,16 +35,18 @@ const Rooms = () => {
           <h2 className='font-primary text-[45px] mb-4'>Rooms &#38; Suites</h2>
         </motion.div>
         {/* Grid */}
-        <div className='grid max-w-sm grid-cols-1 mx-auto gap-7 lg:grid-cols-3 lg:max-w-none lg:mx-0'>
-          {slice.map(room => {
+        <div
+          className='grid max-w-sm grid-cols-1 mx-auto gap-7 lg:grid-cols-3 lg:max-w-none lg:mx-0'
+        >
+          {slice.map((room) => {
             return <Room room={room} key={room.id} />
           })}
         </div>
+
         <motion.div
-          variants={fadeIn('up', 0.2)}
-          initial='hidden'
-          whileInView={'show'}
-          viewport={{ once: false, amount: 0.4 }}
+          variants={container}
+          initial="hidden"
+          whileInView="visible"
           className='pt-10 flex justify-center'
         >
           {loadMore < rooms.length &&

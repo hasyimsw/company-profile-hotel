@@ -1,12 +1,17 @@
 import { Link } from 'react-router-dom'
 import { BsArrowsFullscreen, BsPeople, } from 'react-icons/bs'
 import Button from "../Elements/Button"
+import { item } from '../../variants'
+import { motion } from 'framer-motion'
 
 const Room = (proops) => {
   const { id, name, image, size, maxPerson, description, price } = proops.room
 
   return (
-    <div className='bg-white shadow-2xl min-h-[500px] group'>
+    <motion.div
+      variants={item}
+      className='bg-white shadow-2xl min-h-[500px] group'
+    >
       {/* image */}
       <div className='overflow-hidden'>
         <img className='w-full transition-all duration-500 group-hover:scale-110' src={image} alt="image" />
@@ -49,7 +54,7 @@ const Room = (proops) => {
           Book now from ${price}
         </Link>
       </Button>
-    </div>
+    </motion.div>
   )
 }
 

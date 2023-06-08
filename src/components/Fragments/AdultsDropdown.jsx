@@ -21,7 +21,16 @@ const AdultsDropdown = () => {
       </Menu.Button>
       <Menu.Items as='ul' className='absolute z-40 flex flex-col w-full bg-white'>
         {list.map((li, index) => {
-          return <Menu.Item onClick={() => setAdults(li.name)} as='li' key={index} className='flex items-center justify-center w-full h-12 border-b cursor-pointer hover:bg-accent hover:text-white'>{li.name}</Menu.Item>
+          return (
+            <Menu.Item
+              onClick={() => setAdults(li.name)}
+              as='li'
+              key={index}
+              className='flex items-center justify-center w-full h-12 border-b cursor-pointer hover:bg-accent hover:text-white'
+            >
+              {li.name}
+            </Menu.Item>
+          )
         })}
       </Menu.Items>
     </Menu>
